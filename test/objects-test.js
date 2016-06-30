@@ -54,7 +54,7 @@ describe('objects', () => {
   })
 
   describe('destructivelyDeleteFromObjectByKey(object, key)', () => {
-    it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', () => {
+    it('deletes `key` from object and returns object', () => {
       var obj = { prop: 1 }
 
       expect(destructivelyDeleteFromObjectByKey(obj, 'prop')).to.eql({})
