@@ -1,11 +1,8 @@
 # JavaScript Objects Lab
 
-## Objectives
+## Overview
 
-1. Create an object
-2. Add key-value pairs to an object
-3. Replace values in an object
-4. Delete key-value pairs in an object
+In this, we'll create objects and perform various operations on them. 
 
 ## Instructions
 
