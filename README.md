@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this, we'll create objects and perform various operations on them. 
+In this lab, we'll create objects and perform various operations on them. 
 
 ## Instructions
 
@@ -36,3 +36,5 @@ Hmmmmm...
 ## Resources
 
 - [MDN: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-objects-lab'>Javascript Objects Lab</a> on Learn.co and start learning to code for free.</p>
