@@ -46,7 +46,7 @@ describe('Objects', function() {
   describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
     it('deletes `key` from object and returns object', function() {
       var obj = { prop: 1 }
-
+  
       expect(destructivelyDeleteFromObjectByKey(obj, 'prop')).toMatch({})
       expect(obj).toMatch({})
     })
