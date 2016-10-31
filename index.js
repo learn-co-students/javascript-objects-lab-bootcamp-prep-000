@@ -4,7 +4,7 @@ function updateObjectWithKeyAndValue(object,key,value){
   return object
 }
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-obhect[key]=value
+object[key]=value
 return object
 }
 function delteFromObjectByKey(object,key){
