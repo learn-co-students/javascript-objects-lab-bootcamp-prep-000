@@ -3,8 +3,9 @@ function updateObjectWithKeyAndValue(object,key,value){
   object[key]=value
   return object
 }
-function destructivelyUpdateObjectWithKeyAndVAlue(object, key, value){
-
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+obhect[key]=value
+return object
 }
 function delteFromObjectByKey(object,key){
 }
