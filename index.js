@@ -7,37 +7,19 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  object = {[key]: value};
+  object[key] = value;
   return object;
 }
 
 function deleteFromObjectByKey(object, key){
-  var newObj = Object.assign({}, object);
-  delete newobj.key;
+  object = {key};
+ var newObject =  Object.assign({}, object);
+ delete  newObject.key;
   return object;
 }
 
 function destructivelyDeleteFromObjectByKey(object, key){
-  var object  = object.key;
+  object  = {key};
   delete object.key;
   return object;
-}
-
-
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  object = {[key]: value};
-  return object;
-}
-
-
-function deleteFromObjectByKey(object, key){
-     var newObj = Object.assign({}, object);
-     delete newobj.key;
-     return object;
-}
-
-function destructivelyDeleteFromObjectByKey(object, key){
-    var object  = object.key;
-    delete object.key;
-   return object;
 }
