@@ -1,8 +1,7 @@
-var recipes = {milk: "1/2 cup"}
+var recipes = {"milk": "1/2 cup"}
 
 function updateObjectWithKeyAndValue(obj, k, v) {
-  var newObj = obj
-  newObj[k] = v
+  var newObj = Object.assign({}, obj, {[k]: v})
   return newObj
 }
 
