@@ -1,8 +1,7 @@
 var recipes = { neele : 'steak', emeril : 'creole etoufee' };
 
 function updateObjectWithKeyAndValue(recipes, cook, entree) {
-    recipes[cook] = (entree);
-    return recipes;
+    return Object.assign({}, recipes, { [cook]: entree });
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(recipes, cook, entree) {
@@ -10,12 +9,13 @@ function destructivelyUpdateObjectWithKeyAndValue(recipes, cook, entree) {
     return recipes;
 }
 
-function deleteFromObjectByKey(recipes, cook, entree) {
+function deleteFromObjectByKey(recipes, cook) {
+    const newRecipes = Object.assign({}, recipes);
     delete recipes.cook;
-    return recipes;
+    return newRecipes;
 }
 
-function destructivelyDeleteFromObjectByKey(recipes, cook, entree) {
+function destructivelyDeleteFromObjectByKey(recipes, cook) {
     delete recipes.cook;
     return recipes;
 }
