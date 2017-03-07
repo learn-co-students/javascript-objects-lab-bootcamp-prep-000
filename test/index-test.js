@@ -14,7 +14,7 @@ describe('Objects', function() {
         prop2: 2
       })
 
-      expect(obj).toMatch({ prop: 1 })
+      expect(obj).toMatch({ prop: 1, prop2: undefined })
     })
   })
 
