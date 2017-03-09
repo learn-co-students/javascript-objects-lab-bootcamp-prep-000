@@ -1,4 +1,4 @@
-/*global describe, it */
+/*global describe, it
 
 describe('Objects', function() {
   it('defines a `recipes` object', function() {
@@ -52,4 +52,4 @@ describe('Objects', function() {
     })
   })
 
-})
+})  **/
