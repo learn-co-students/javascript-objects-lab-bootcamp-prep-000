@@ -1,10 +1,16 @@
-var recipes = {apples: 10 };
-function destructivelyUpdateObjectWithKeyAndValue (obj, key, value) { obj[key]= value
+var recipes = {}
+function destructivelyUpdateObjectWithKeyAndValue (obj, key, value) {obj[key]= value
 return obj
 }
-destructivelyUpdateObjectWithKeyAndValue (recipes, "flour", "2 cups")
-Object.assign ({ apples: 10}, {flour: "2 cups"})
-Object.assign ({ oatmeal: "3 cups"}, {apricots: 15}, {flour; "3 cups"})
 function updateObjectWithKeyAndValue(obj, key, value) {
  return Object.assign({}, obj, { [key]: value })
+}
+function deleteFromObjectByKey(obj, key) {
+  var foo = Object.assign(obj)
+  return foo
+}
+function destructivelyDeleteFromObjectByKey(obj, key) {
+  delete obj[key]
+
+  return obj
 }
