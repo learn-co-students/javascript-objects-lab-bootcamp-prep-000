@@ -5,27 +5,27 @@ var recipes = {
 }
 
 function updateObjectWithKeyAndValue(object, key, value) {
-  return return Object.assign({}, object, { [key]: value })
+  return Object.assign({}, object, { [key]: value });
 }
 updateObjectWithKeyAndValue(recipes,'snack','pudding')
 
 
 function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
-  obj[key] = value
-  return obj
+  obj[key] = value;
+  return obj;
 }
 destructivelyUpdateObjectWithKeyAndValue(recipes, 'fruit', 'apple')
 
 function deleteFromObjectByKey(obj, key) {
-  var newObj = Object.assign({}, obj)
-  newObj
-  delete newObj.key
-  return obj
+  var newObj = Object.assign({}, obj);
+  newObj;
+  delete newObj.key;
+  return obj;
 }
 deleteFromObjectByKey(recipes, 'protein')
 
 function destructivelyDeleteFromObjectByKey(obj, key) {
-  delete obj.key
-  return obj
+  delete obj.key;
+  return obj;
 }
 destructivelyDeleteFromObjectByKey(recipes,'protein')
