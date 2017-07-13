@@ -24,10 +24,6 @@ describe('Objects', function() {
     })
   })
 
-// UPDATED TO SAY "AND RETURNS THE ENTIRE UPDATED OBJECT"
-// This is to avoid the confusion of simply creating a function that updates the object
-// but does not return any value. This makes it clear that the function must update
-// the object AND return the updated object
   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
       var obj = { prop: 1 }
