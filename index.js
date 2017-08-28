@@ -22,3 +22,9 @@ var objCopy= Object.assign ({}, object)
   delete objCopy[key]
 return objCopy
 }
+
+
+function destructivelyDeleteFromObjectByKey (object, key){
+  delete object[key]
+  return object
+  }
