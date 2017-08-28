@@ -12,5 +12,13 @@ return object
 
 function deleteFromObjectByKey (object, key){
 Object.assign({}, object)
-  delete object.key
+var objCopy= Object.assign ({}, object)
+  delete object[key]
+return object
+}
+
+function deleteFromObjectByKey (object, key){
+var objCopy= Object.assign ({}, object)
+  delete objCopy[key]
+return objCopy
 }
