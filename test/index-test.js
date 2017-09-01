@@ -14,7 +14,7 @@ describe('Objects', function() {
         prop2: 2
       })
 
-      expect(obj).toMatch({ prop: 1 })
+      expect(obj).toEqual({ prop: 1 })
     })
   })
 
@@ -27,7 +27,7 @@ describe('Objects', function() {
         prop2: 2
       })
 
-      expect(obj).toMatch({
+      expect(obj).toEqual({
         prop: 1,
         prop2: 2
       })
@@ -39,7 +39,7 @@ describe('Objects', function() {
       var obj = { prop: 1 }
 
       expect(deleteFromObjectByKey(obj, 'prop')).toMatch({})
-      expect(obj).toMatch({ prop: 1 })
+      expect(obj).toEqual({ prop: 1 })
     })
   })
 
@@ -47,8 +47,8 @@ describe('Objects', function() {
     it('deletes `key` from object and returns object', function() {
       var obj = { prop: 1 }
 
-      expect(destructivelyDeleteFromObjectByKey(obj, 'prop')).toMatch({})
-      expect(obj).toMatch({})
+      expect(destructivelyDeleteFromObjectByKey(obj, 'prop')).toEqual({})
+      expect(obj).toEqual({})
     })
   })
 
