@@ -11,12 +11,7 @@ function destructivelyUpdateObjectWithKeyAndValue(recipes, key, value){
 }
 
 function deleteFromObjectByKey(recipes,key){
-/*
-  var copy = recipes
-  delete copy[key]
-  return copy
-*/
-  copyRecipe.assign({}, recipes)
+  var copyRecipe = Object.assign({}, recipes)
   delete copyRecipe[key]
   return copyRecipe
 }
