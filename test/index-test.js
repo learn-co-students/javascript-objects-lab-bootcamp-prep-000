@@ -71,5 +71,4 @@ describe('Objects', function() {
       expect(obj['prop']).toBe(undefined)
     })
   })
-
 })
