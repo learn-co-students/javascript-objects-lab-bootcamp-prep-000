@@ -1,7 +1,7 @@
 //creates a new object named recipes
 var recipes = {};
 
-//returns an object with the orignal key value pairs and the new key value pair. leaves original object intact
+//returns an object with the original key value pairs and the new key value pair. leaves original object intact
 function updateObjectWithKeyAndValue(object, key, value)
 {
   return Object.assign({}, object, { [key]: value })
