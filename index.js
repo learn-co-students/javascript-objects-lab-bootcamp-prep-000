@@ -3,7 +3,6 @@ var recipes = {}
 //this one has a problem
 //updateObjectWithKeyAndValue(obj, 'prop2', 2)
 function updateObjectWithKeyAndValue(object, key, value){
-  // console.log(object[key])
   return Object.assign({prop: 1}, {[key]: value})
 }
 
