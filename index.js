@@ -1,21 +1,18 @@
-var recipes = {
-  property: "Fuck this shit",
-};
+var recipes = {};
 
-
-function updateObjectWithKeyAndValue(object, key, value) {
-    var resultObj = Object.assign({}, recipes, { [key]: value });
+function updateObjectWithKeyAndValue(object, key, value){
+    var resultObj = Object.assign({}, object);
+    resultObj[key] = value;
     return resultObj;
 }
 
-
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-    object[key] = value;
-    return object;
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+  object[key] = value;
+  return object;
 }
 
 function deleteFromObjectByKey(object, key){
-  var resultObj = new Object(object);
+  var resultObj = Object.assign({}, object);
   delete resultObj[key];
   return resultObj;
 }
