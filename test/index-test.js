@@ -6,7 +6,7 @@ describe('Objects', function() {
   })
 
   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
-    it('returns an object with the orignal key value pairs and the new key value pair', function() {
+    it('returns an object with the original key value pairs and the new key value pair', function() {
       var obj = { prop: 1 }
 
       expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
