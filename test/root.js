@@ -4,8 +4,14 @@ const babel = require('babel-core');
 const jsdom = require('mocha-jsdom');
 const path = require('path');
 
+// const babelResult = babel.transformFileSync(
+//   path.resolve(__dirname, '..', 'index.js'), {
+//     presets: ['es2015']
+//   }
+// );
+
 const babelResult = babel.transformFileSync(
-  path.resolve(__dirname, '..', 'index.js'), {
+  path.resolve(__dirname, '..', 'indexAgain.js'), {
     presets: ['es2015']
   }
 );
