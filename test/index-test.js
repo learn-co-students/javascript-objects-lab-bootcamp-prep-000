@@ -28,7 +28,7 @@ describe('Objects', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
       var obj = { prop: 1 }
 
-      expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
+      expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({    
         prop: 1,
         prop2: 2
       })
@@ -50,7 +50,7 @@ describe('Objects', function() {
 
     it('does not modify the original object (it is non-destructive)', function() {
       var obj = { prop: 1 }
-
+     
       deleteFromObjectByKey(obj, 'prop')
       expect(obj['prop']).toBe(1)
     })
