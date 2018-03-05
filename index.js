@@ -1,2 +1,3 @@
 var recipes = Object{}
-var updateObjectWithKeyAndValue = {recipes: 'nutella'}
+var updateObjectWithKeyAndValue = Object.assign({}, 'recipes')
+return recipes;
