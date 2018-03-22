@@ -5,6 +5,14 @@ var recipes = {
 }
 
 function updateObjectWithKeyAndValue (recipes, ingredient, amount) {
-  Object.assign ({}, recipes, {[ingredient]: amount})
-  return recipes
+  return Object.assign ({}, recipes, { [ingredient]: amount})
 }
+
+function destructivelyUpdateObjectWithKeyAndValue(recipes, ingredient, amount) {
+  return Object.assign(recipes, { [ingredient]:amount})
+}
+
+function deleteFromObjectByKey(recipes, ingredient) {
+  return Object.assign ({})
+}
+
