@@ -1,29 +1,41 @@
-var recipes = new Object ( { key: "value"} );
-
-function updateObjectWithKeyAndValue (recipes, key, value) {
+var recipes = {
   
-  return Object.assign ( {}, recipes, { [key]: value });
+};
+
+
+function updateObjectWithKeyAndValue (obj, key, value) {
+  
+  
+  return Object.assign( {}, obj, { [key]: value}   );
+  
 }
 
-function destructivelyUpdateObjectWithKeyAndValue (recipes, key, value) {
+function destructivelyUpdateObjectWithKeyAndValue (obj, key, value) {
   
-  recipes[key] = value
-  return recipes;
+  obj[key] = value;
+  
+  return obj;
+  
 }
 
-function deleteFromObjectByKey (recipes, key) {
 
-  var recipesNew = Object.assign ({}, 'key')
-  delete recipesNew.key;
-  return recipesNew;
+function deleteFromObjectByKey (obj, key) {
+  
+  var newObj = Object.assign ( {}, obj );
+  
+  return delete newObj.key;
+  
 }
 
-function destructivelyDeleteFromObjectByKey (recipes, key) {
+function destructivelyDeleteFromObjectByKey (obj, key) {
   
-
+  return delete obj[key];
   
-  // delete recipes.key; this is wrong, but why?
-  
-  delete recipes[key];
-  return recipes;
 }
+
+
+
+
+
+
+
