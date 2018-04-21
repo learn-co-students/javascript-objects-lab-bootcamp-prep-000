@@ -13,6 +13,8 @@ functions.
 
 ![recipes](http://i.giphy.com/l0HFjaGmrbHanFXNe.gif)
 
+
+
 Good luck!
 
 **HINT**: You might find `deleteFromObjectByKey` to be a bit hard to write non-destructively. Think about how we learned to use `Object.assign`. What happens if we do
@@ -38,3 +40,6 @@ Hmmmmm...
 - [MDN: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-objects-lab'>Javascript Objects Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+
