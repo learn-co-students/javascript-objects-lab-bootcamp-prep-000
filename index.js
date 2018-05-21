@@ -10,14 +10,14 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 }
 
 function deleteFromObjectByKey(object, key) {
- var newObj = Object.assign({}, recipes);
- delete newObj['key'];
+ let newObj = Object.assign({}, object);
+ delete newObj[key];
  return newObj;
 }
 
 function destructivelyDeleteFromObjectByKey(object, key) {
-  delete recipes.key;
-  return recipes; 
+  delete object[key];
+  return object; 
 }
 /*
 stuff = {flour: 'lots', sugar: 'many', salt: 'none', dairy: 'little'};
