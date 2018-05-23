@@ -24,7 +24,7 @@ describe('Objects', function() {
     })
   })
 
-  describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
+ describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
       var obj = { prop: 1 }
 
