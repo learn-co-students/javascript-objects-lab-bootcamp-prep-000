@@ -9,5 +9,5 @@ function destructivelyUpdateObjectWithKeyAndValue(a, b, c) {
   
 function destructivelyDeleteFromObjectByKey(a, b) {
   delete a[b]; return a
-  
 }
+
