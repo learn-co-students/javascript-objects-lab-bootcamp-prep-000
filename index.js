@@ -1,0 +1,1 @@
+var recipes = { eggs: 3, milk: '1 cup', butter: '2 tbsp', sugar: 'half cup'}
