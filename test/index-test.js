@@ -24,7 +24,7 @@ describe('Objects', function() {
     })
   })
 
-  describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
+  describe('UpdestructivelydateObjectWithKeyAndValue(object, key, value)', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
       var obj = { prop: 1 }
 
@@ -58,7 +58,7 @@ describe('Objects', function() {
 
   describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
     it('returns object without the delete key/value pair', function() {
-      var obj = { prop: 1 }
+      var obj = { prop: "1" }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
 
       expect(newObj['prop']).toBe(undefined)
