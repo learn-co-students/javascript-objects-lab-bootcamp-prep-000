@@ -1,1 +1,1 @@
---timeout 10000
+`"mocha-jsdom": "~1.1.0",`
