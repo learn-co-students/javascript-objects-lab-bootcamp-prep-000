@@ -30,7 +30,7 @@ describe('Objects', function() {
 
       expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
         prop: 1,
-        prop2: 2
+        prop2:2
       })
 
       expect(obj).toMatch({
