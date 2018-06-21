@@ -35,6 +35,10 @@ describe('Objects', function() {
       })
 
       expect(obj).toMatch({
+        
+        
+        
+        
         prop: 1,
         prop2: 2
       })
