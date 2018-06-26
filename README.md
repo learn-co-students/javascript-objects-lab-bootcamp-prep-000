@@ -29,7 +29,7 @@ delete newObj.foo // true
 newObj // {}
 
 obj // { foo: 'bar' }
-```
+//Helo and welcome to this sessionlearn
 
 Hmmmmm...
 
