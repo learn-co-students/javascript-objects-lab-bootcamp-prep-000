@@ -13,3 +13,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
 }
 
 destructivelyUpdateObjectWithKeyAndValue(recipes, Salsa, "tomatoes & other stuff");
+
+function deleteFromObjectByKey(object, key){
+  return Object.assign({}, object)
+}
