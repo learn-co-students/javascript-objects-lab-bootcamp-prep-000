@@ -21,3 +21,11 @@ function deleteFromObjectByKey(object, key){
 }
 
 deleteFromObjectByKey(recipes, cookies);
+
+function destructivelyDeleteFromObjectByKey(object, key){
+  delete object[key];
+  return object;
+}
+var recipes2 = new Object ({cake: 'flour & other stuff'});
+
+destructivelyDeleteFromObjectByKey(recipes2, cake);
