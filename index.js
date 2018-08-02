@@ -14,9 +14,7 @@ function updateObjectWithKeyAndValue(object, key, value) {
 
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-  object = {
-    key : value
-    };
+  object[key] = value; // this is working by change to [].
   return object;
 }
 
@@ -36,7 +34,7 @@ function deleteFromObjectByKey(object, key) {
 // destructive delete
 
 function destructivelyDeleteFromObjectByKey(object, key) {
-  delete object.key;
+  delete object[key];   //this worked by change from . notatiaon to []. 
   return object;
   
 }
