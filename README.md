@@ -11,7 +11,8 @@ asking you to solve. In particular, you'll need to define a `recipes` object and
 then apply certain updates (destructively and non-destructively) in various
 functions.
 
-![recipes](http://i.giphy.com/l0HFjaGmrbHanFXNe.gif)
+![recipes](https://67.media.tumblr.com/6587a382f1b0e5a7d495d8bd4fc55fcd/tumblr_njax7zRQFH1sakzt7o1_500.gif)
+
 
 Good luck!
 
