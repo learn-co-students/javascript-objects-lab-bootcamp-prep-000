@@ -32,6 +32,11 @@ function updateObjectWithKeyAndValue(object, key, value) {
   object[key] = value
   return object
 }
+
+function updateObjectWithKeyAndValue(object, key, value) {
+//  it does not modifythe original object, but rather returns a clone with the new data
+}
+
  /*
  function deleteFromObjectByKey() {
    return 'destructed object'
