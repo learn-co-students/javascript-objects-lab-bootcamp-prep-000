@@ -22,7 +22,7 @@ obj // { foo: 'bar' }
 Hmmmmm...
  */
  
-/* no active code test results
+/* test1 results before coding starts
 // ♥ learn
 
 > javascript-objects-lab@0.1.0 test /home/FSGh2018/javascript-objects-lab-bootcamp-prep-000
@@ -89,9 +89,11 @@ var recipes = {
 }
 
  
- /*
- 
+ /* test 2 results
+
   */
+  
+  
 /*
 function updateObjectWithKeyAndValue(object, key, value) {
 //  returns an object with the orignal key value pairs and the new key value pair
@@ -100,10 +102,11 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
  */
 
+/*
 function UpdateObjectWithKeyAndValue(object, key, value) {
 //  it does not modifythe original object, but rather returns a clone with the new data
 }
-
+ */
  
  /*
  function deleteFromObjectByKey() {
