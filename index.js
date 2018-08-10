@@ -136,16 +136,15 @@ var recipes = {
 npm ERR! Test failed.  See above for more details.
 [12:39:29] (master) javascript-objects-lab-bootcamp-prep-000
 // ♥
-  */
+ */
   
-  
-/*
+
 function updateObjectWithKeyAndValue(object, key, value) {
 // returns an object with the orignal key value pairs and the new key value pair
   object[key] = value
   return object
 }
- */
+
 
 /* test 3 results
 
