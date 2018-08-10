@@ -198,21 +198,11 @@ npm ERR! Test failed.  See above for more details.
 
 function updateObjectWithKeyAndValue(object, key, value) {
 // it does not modifythe original object, but rather returns a clone with the new data
-/* HINT from lesson
-var obj = { foo: 'bar' }
  
-var newObj = Object.assign({}, obj)
- 
-newObj // { foo: 'bar' }
- 
-delete newObj.foo // true
- 
-newObj // {}
- 
-obj // { foo: 'bar' }
- */
- 
- 
+  var newOject = Object.assign({}, object)
+
+  newobject[key] = value
+  return object
 }
 
 
