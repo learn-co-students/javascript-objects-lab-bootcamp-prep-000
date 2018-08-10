@@ -147,7 +147,52 @@ function updateObjectWithKeyAndValue(object, key, value) {
 
 
 /* test 3 results
+// ♥ learn
 
+> javascript-objects-lab@0.1.0 test /home/FSGh2018/javascript-objects-lab-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 2   -_,------,
+ 6   -_|   /\_/\
+ 0   -^|__( x .x)
+     -  ""  ""
+
+  2 passing (548ms)
+  6 failing
+
+  1) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but rather returns a clone with the new data:
+     Error: Expected 2 to be undefined
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toBe (node_modules/expect/lib/Expectation.js:66:28)
+      at Context.<anonymous> (test/index-test.js:23:28)
+
+  2) Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) updates `object` with the given `key` and `value` (it is destructive) and returns theentire updated object:
+     ReferenceError: destructivelyUpdateObjectWithKeyAndValue is not defined
+      at Context.<anonymous> (test/index-test.js:31:7)
+
+  3) Objects deleteFromObjectByKey(object, key) deletes `key` from a clone of object and returns the new object (it is non-destructive):
+     ReferenceError: deleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:46:20)
+
+  4) Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):
+     ReferenceError: deleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:54:7)
+
+  5) Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
+     ReferenceError: destructivelyDeleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:62:20)
+
+  6) Objects destructivelyDeleteFromObjectByKey(object, key) modifies the original object:
+     ReferenceError: destructivelyDeleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:69:20)
+
+
+
+npm ERR! Test failed.  See above for more details.
+[12:45:24] (master) javascript-objects-lab-bootcamp-prep-000
+// ♥
+[12:45:34] (master) javascript-objects-lab-bootcamp-prep-000
+// ♥
  */
  
 /*
@@ -155,8 +200,13 @@ function UpdateObjectWithKeyAndValue(object, key, value) {
 //  it does not modifythe original object, but rather returns a clone with the new data
 }
  */
+
+/* test 4 results 
+
+ */
  
- /*
+ 
+/*
  function deleteFromObjectByKey() {
    return 'destructed object'
  }
