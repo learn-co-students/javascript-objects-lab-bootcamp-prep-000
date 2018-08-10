@@ -89,7 +89,7 @@ var recipes = {
 }
 
  
- /* test 2 results
+ /* test 2 results: error 1) and 2) have same function name
 // ♥ learn
 
 > javascript-objects-lab@0.1.0 test /home/FSGh2018/javascript-objects-lab-bootcamp-prep-000
@@ -146,7 +146,7 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 
 
-/* test 3 results
+/* test 3 results: error 1) still has same function name as my 1st function that passed
 // ♥ learn
 
 > javascript-objects-lab@0.1.0 test /home/FSGh2018/javascript-objects-lab-bootcamp-prep-000
@@ -206,12 +206,59 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 
 
-/* test 4 results 
+/* test 4 results: my 1st passed function now failing and my new 2nd function with the same name also failing
+// ♥ learn
 
+> javascript-objects-lab@0.1.0 test /home/FSGh2018/javascript-objects-lab-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 1   -_,------,
+ 7   -_|   /\_/\
+ 0   -^|__( x .x)
+     -  ""  ""
+
+  1 passing (559ms)
+  7 failing
+
+  1) Objects updateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value pairs and the new key value pair:
+     ReferenceError: newobject is not defined
+      at updateObjectWithKeyAndValue (about:blank:188:3)
+      at Context.<anonymous> (test/index-test.js:12:14)
+
+  2) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but rather returns a clone with the new data:
+     ReferenceError: newobject is not defined
+      at updateObjectWithKeyAndValue (about:blank:188:3)
+      at Context.<anonymous> (test/index-test.js:21:7)
+
+  3) Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) updates `object` with the given `key` and `value` (it is destructive) and returns theentire updated object:
+     ReferenceError: destructivelyUpdateObjectWithKeyAndValue is not defined
+      at Context.<anonymous> (test/index-test.js:31:7)
+
+  4) Objects deleteFromObjectByKey(object, key) deletes `key` from a clone of object and returns the new object (it is non-destructive):
+     ReferenceError: deleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:46:20)
+
+  5) Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):
+     ReferenceError: deleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:54:7)
+
+  6) Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
+     ReferenceError: destructivelyDeleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:62:20)
+
+  7) Objects destructivelyDeleteFromObjectByKey(object, key) modifies the original object:
+     ReferenceError: destructivelyDeleteFromObjectByKey is not defined
+      at Context.<anonymous> (test/index-test.js:69:20)
+
+
+
+npm ERR! Test failed.  See above for more details.
+[12:59:33] (master) javascript-objects-lab-bootcamp-prep-000
+// ♥
  */
  
  
-/*
+/* my stub based on info in lesson
  function deleteFromObjectByKey() {
    return 'destructed object'
  }
