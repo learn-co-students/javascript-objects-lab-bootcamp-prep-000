@@ -27,7 +27,9 @@ var recipes = {
   key: 'value'
 }
 
- 
+function updateObjectWithKeyAndValue(object, key, value) {
+  return 'an object with the orignal key value pairs and the new key value pair'
+}
  /*
  function deleteFromObjectByKey() {
    return 'destructed object'
