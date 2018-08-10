@@ -22,11 +22,11 @@ obj // { foo: 'bar' }
 Hmmmmm...
  */
  
-/*  
+  
 var recipes = {
   key: 'value'
 }
- */
+
  
  /*
  function deleteFromObjectByKey() {
