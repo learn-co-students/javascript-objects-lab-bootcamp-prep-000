@@ -246,7 +246,8 @@ npm ERR! Test failed.  See above for more details.
 [13:14:39] (master) javascript-objects-lab-bootcamp-prep-000
 // ♥
  */
- 
+
+// CONTINUE WITH LAB BEFORE Ask a QUESTION ABOUT DUPLICATE FUNCTION NAMES 
  
 /* my stub based on info in lesson
  function deleteFromObjectByKey() {
