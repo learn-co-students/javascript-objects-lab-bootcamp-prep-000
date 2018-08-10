@@ -247,7 +247,9 @@ npm ERR! Test failed.  See above for more details.
 // ♥
  */
 
-// CONTINUE WITH LAB BEFORE Ask a Question ABOUT DUPLICATE FUNCTION NAMES 
+// CONTINUE WITH LAB BEFORE Ask a Question ABOUT DUPLICATE FUNCTION NAMES ABOVE
+ 
+ 
  
 /* my stub based on info in lesson
  function deleteFromObjectByKey() {
