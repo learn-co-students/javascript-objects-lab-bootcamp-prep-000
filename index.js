@@ -5,7 +5,7 @@ define a recipes object and then apply certain updates (destructively and non-de
  */
  
 var recipes = {
-  key: value
+  key: 'value'
 }
 
 /*
@@ -26,8 +26,9 @@ obj // { foo: 'bar' }
 Hmmmmm...
  */
  
+ /*
  function deleteFromObjectByKey() {
    return 'destructed object'
  }
- 
+  */
  
