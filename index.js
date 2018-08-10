@@ -249,8 +249,14 @@ npm ERR! Test failed.  See above for more details.
 
 // CONTINUE WITH LAB BEFORE Ask a Question ABOUT DUPLICATE FUNCTION NAMES ABOVE
  
- 
- 
+
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+ //  updates `object` with the given `key` and `value` (it is destructive) and returns theentire updated object
+  object[key] = value 
+  return object
+}
+
+
 /* my stub based on info in lesson
  function deleteFromObjectByKey() {
    return 'destructed object'
