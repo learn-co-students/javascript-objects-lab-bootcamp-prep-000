@@ -12,7 +12,12 @@ var recipes = {
 
 // 5) Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):
 
-// 6) Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):
+function deleteFromObjectByKey(object, key) {
+// does not modify the original object (it is non-destructive):
+  var newObject = Object.assign({}, object)
+  delete newObject.key
+  return newObject
+}
 
 // 7) Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
 
