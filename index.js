@@ -2,12 +2,13 @@ var recipes = {
   key1: 'value1'
 }
 
+/*
 function updateObjectWithKeyAndValue(object, key, value) {
 // returns an object with the orignal key value pairs and the new key value pair:
   object[key] = value
   return object
 }
-
+ */
 
 // 2) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but rather returns a clone with the new data:
 
