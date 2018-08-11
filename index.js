@@ -6,7 +6,11 @@ var recipes = {
 
 // 2) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but rather returns a clone with the new data:
 
-// 3) Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object:
+function  destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+// updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object:
+  object[key] = value
+  return object
+}
 
 // 4) Objects deleteFromObjectByKey(object, key) deletes `key` from a clone of object and returns the new object (it is non-destructive):
 
