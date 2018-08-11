@@ -4,7 +4,12 @@ var recipes = {
 
 // 1) Objects updateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value pairs and the new key value pair:
 
-// 2) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but rather returns a clone with the new data:
+function updateObjectWithKeyAndValue(object, key, value) {
+// it does not modifythe original object, but rather returns a clone with the new data:
+  var newObject = Object.assign({}, object)
+  newObject[key] = value
+  return newObject
+}
 
 function  destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 // updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object:
