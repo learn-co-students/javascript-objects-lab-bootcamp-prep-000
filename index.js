@@ -15,7 +15,7 @@ var recipes = {
 function deleteFromObjectByKey(object, key) {
 // does not modify the original object (it is non-destructive):
   var newObject = Object.assign({}, object)
-  delete newObject.key
+  delete newObject[key]
   return newObject
 }
 
