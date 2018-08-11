@@ -16,5 +16,8 @@ var recipes = {
 
 // 7) Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
 
-// 8) Objects destructivelyDeleteFromObjectByKey(object, key) modifies the original object:
+function destructivelyDeleteFromObjectByKey(object, key) {
+  delete object[key] 
+  return object
+}
 
