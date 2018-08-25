@@ -22,6 +22,14 @@ describe('Objects', function() {
 
       expect(obj['prop2']).toBe(undefined)
     })
+
+    it('it returns an object with an updated key value pair', function() {
+      var obj = { prop: 'old value' }
+
+      var newObj = updateObjectWithKeyAndValue(obj, 'prop', 'new value')
+
+      expect(newObj['prop']).toBe('new value')
+    })
   })
 
   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
