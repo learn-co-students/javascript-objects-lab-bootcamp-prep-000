@@ -15,7 +15,7 @@ describe('Objects', function() {
       })
     })
 
-    it('it does not modify the original object, but rather returns a clone with the new data', function() {
+    it('does not modify the original object, but rather returns a clone with the new data', function() {
       var obj = { prop: 1 }
 
       updateObjectWithKeyAndValue(obj, 'prop2', 2)
