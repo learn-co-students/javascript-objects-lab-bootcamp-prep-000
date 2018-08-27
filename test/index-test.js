@@ -1,11 +1,16 @@
 /*global describe, it */
-
+//firts change
+var recipes={};
 describe('Objects', function() {
   it('defines a `recipes` object', function() {
     expect(typeof recipes).toEqual('object')
   })
-
-  describe('updateObjectWithKeyAndValue(object, key, value)', function() {
+//second change
+function updateObjectWithKeyAndValue(object, key, value){
+  obj[key]=value
+  return obj;
+}
+  /*describe('updateObjectWithKeyAndValue(object, key, value)', function() {
     it('returns an object with the orignal key value pairs and the new key value pair', function() {
       var obj = { prop: 1 }
 
@@ -22,9 +27,13 @@ describe('Objects', function() {
 
       expect(obj['prop2']).toBe(undefined)
     })
-  })
-
-  describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
+  })*/
+//third change
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+  var newObj= Object.assign({}, object)
+  newObj;
+}
+  /*describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
       var obj = { prop: 1 }
 
@@ -38,9 +47,15 @@ describe('Objects', function() {
         prop2: 2
       })
     })
-  })
+  })*/
+//fourth change 
+function deleteFromObjectByKey(object, key){
+ var newObject=object[key]
+ delete object.key
+    return object;
+}
 
-  describe('deleteFromObjectByKey(object, key)', function() {
+  /*describe('deleteFromObjectByKey(object, key)', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
@@ -54,9 +69,13 @@ describe('Objects', function() {
       deleteFromObjectByKey(obj, 'prop')
       expect(obj['prop']).toBe(1)
     })
-  })
-
-  describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
+  })*/
+//fifth change 
+function destructivelyDeleteFromObjectByKey(object, key){
+  var deletedKey= delete object.key
+  return deletedKey;
+}
+ /* describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
     it('returns object without the delete key/value pair', function() {
       var obj = { prop: 1 }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
@@ -70,6 +89,6 @@ describe('Objects', function() {
 
       expect(obj['prop']).toBe(undefined)
     })
-  })
+  })*/
 
 })
