@@ -1,10 +1,10 @@
+
 let recipes = []
 
 function updateObjectWithKeyAndValue(object, key, value) {
-  let newobject = {}
-  newobject = Object.assign({}, object, {key, value});
-  return object
+  return Object.assign({}, object, {[key]: value});
 }
+
 //it does not modifythe original object, but rather returns a clone with the new data
 // returns an object with the orignal key value pairs and the new key value pair:
 
@@ -23,6 +23,21 @@ function deleteFromObjectByKey(object, key) {
   return newobj
 }
 /*
+
+  recipies
+}
+
+function updateObjectWithKeyAndValue(object, key, value) {
+  
+}
+//it does not modifythe original object, but rather returns a clone with the new data
+
+
+
+function deleteFromObjectByKey() {
+  
+}
+
 var obj = { foo: 'bar' }
  
 var newObj = Object.assign({}, obj)
@@ -33,6 +48,7 @@ delete newObj.foo // true
  
 newObj // {}
  
+
 obj // { foo: 'bar' }
 */
 function destructivelyDeleteFromObjectByKey(object, key){
@@ -41,3 +57,6 @@ function destructivelyDeleteFromObjectByKey(object, key){
 } 
 //returns object without the delete key/value pair:
 //modifies the original object:
+
+obj // { foo: 'bar' }
+
