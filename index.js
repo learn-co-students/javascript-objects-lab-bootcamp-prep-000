@@ -4,5 +4,5 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) { object[k
 return object }
 
 function updateObjectWithKeyAndValue(object, key, value) {
-  return assign.Object({}, object, {[key]: value});
+  return Object.assign({}, object, {[key]: value});
 }
