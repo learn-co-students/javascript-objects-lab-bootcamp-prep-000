@@ -10,6 +10,16 @@ function updateObjectWithKeyAndValue(obj, key, value){
 updateObjectWithKeyAndValue(Objects, prop2, 2);
 
 
-destructivelyUpdateObjectWithKeyAndValue(obj, key, value){
+function destructivelyUpdateObjectWithKeyAndValue(obj, key, value){
+  
+}
+
+
+function deleteFromObjectByKey(obj, key){
+  
+}
+
+
+function destructivelyDeleteFromObjectByKey(obj, key){
   
 }
