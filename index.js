@@ -17,12 +17,20 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value){
   
 }
 
-destructivelyUpdateObjectWithKeyAndValue(recipes, prop2, 2)
+destructivelyUpdateObjectWithKeyAndValue(recipes, prop2, 2);
 
 
 function deleteFromObjectByKey(obj, key){
   
+  var obj = { 'prop': 1 };
+  var newObj = deleteFromObjectByKey(obj, 'prop');
+  
+  return newObj;
+  
 }
+
+deleteFromObjectByKey(recipes, 'prop');
+
 
 
 function destructivelyDeleteFromObjectByKey(obj, key){
