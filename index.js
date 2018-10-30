@@ -2,14 +2,18 @@ var recipes = {
   omelette: ['eggs', 'cheese', 'onions', 'peppers']
 };
 
+function updateObjectWithKeyAndValue(recipes, key, value) {
+  var newObject = Object.assign({}, recipes, key, value);
+  return newObject;
+}
+
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  object[key] = value;
+  return object;
+}
+
 
 /*
- 
-describe('Objects', function() {
-  it('defines a `recipes` object', function() {
-    expect(typeof recipes).toEqual('object')
-  })
-
   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
     it('returns an object with the orignal key value pairs and the new key value pair', function() {
       var obj = { prop: 1 }
@@ -33,19 +37,7 @@ describe('Objects', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
       var obj = { prop: 1 }
 
-      expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
-        prop: 1,
-        prop2: 2
-      })
-
-      expect(obj).toMatch({
-        prop: 1,
-        prop2: 2
-      })
-    })
-  })
-
-  describe('deleteFromObjectByKey(object, key)', function() {
+      describe('deleteFromObjectByKey(object, key)', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
