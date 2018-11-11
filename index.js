@@ -1,7 +1,5 @@
 var recipes = {
-  tomatoes: 3,
-  peppers: 1,
-  // salt: "1/4 of teaspoon"
+  // recipes, not a single recipe
 }
 
 function updateObjectWithKeyAndValue(obj, key, value) {
