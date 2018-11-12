@@ -14,10 +14,10 @@ return object
 
 function deleteFromObjectByKey(object, key){
 
-var = obj = { key: '1'}
+var newObj = Object.assign({}, {key})
+delete newObj[key]
+return newObj
 
-delete obj.key
-return object
 }
 
 function destructivelyDeleteFromObjectByKey(object, key){
