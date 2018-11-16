@@ -38,5 +38,4 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   })
 
 })
-
 */
