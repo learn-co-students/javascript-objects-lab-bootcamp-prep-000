@@ -1,5 +1,5 @@
 var recipes = {
-  Omelette: ["Eggs", "Onions", "Mushrooms", "Peppers"]
+  Omelette: "Eggs, Onions, Peppers"
 };
 
 function updateObjectWithKeyAndValue(object, key, value) {
@@ -9,12 +9,12 @@ function updateObjectWithKeyAndValue(object, key, value) {
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   object[key] = value;
   return object;
-} 
+}
 
 function deleteFromObjectByKey(object, key) {
- var newObject = Object.assign({}, object);
- return delete newObject[key];
-}
+  var newObject = Object.assign({}, object);
+  return newObject[key];
+} 
 
 function destructivelyDeleteFromObjectByKey(object, key) {
   return delete object[key];
