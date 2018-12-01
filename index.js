@@ -1,23 +1,23 @@
 var recipes = {
-  turkeySandwich: ["Bread", "Turkey", "Mayonnaise"]
+  "Turkey Sandwich": ["Bread", "Turkey", "Mayonnaise"]
 };
 
-function updateObjectWithKeyAndValue(obj, key, value) {
- return Object.assign({}, obj, {[key]: value});
+function updateObjectWithKeyAndValue(object, key, value) {
+  return Object.assign({}, object, {[key]: value});
 }
 
-function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
-  obj[key] = value;
-  return obj;
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  object[key] = value;
+  return object;
 }
 
-function deleteFromObjectByKey(obj, key) {
-  var newObj = Object.assign({}, obj);
-  return delete newObj[key];
+function deleteFromObjectByKey(object, key) {
+  var newObject = Object.assign({}, object);
+  return object[key];
 }
 
-function destructivelyDeleteFromObjectByKey(obj, key) {
-  return delete obj[key];
+function destructivelyDeleteFromObjectByKey(object, key) {
+  return delete object[key];
 }
 
 /*
