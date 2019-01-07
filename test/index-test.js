@@ -21,6 +21,7 @@ describe('Objects', function() {
       updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
       expect(obj['prop2']).toBe(undefined)
+      
     })
   })
 
@@ -34,6 +35,10 @@ describe('Objects', function() {
       })
 
       expect(obj).toMatch({
+        
+        
+        
+        
         prop: 1,
         prop2: 2
       })
