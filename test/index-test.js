@@ -73,3 +73,12 @@ describe('Objects', function() {
   })
 
 })
+
+function destructivelyDeleteFromObjectByKey(obj, key) {
+ return {}
+}
+
+function destructivelyDeleteFromObjectByKey(obj, key) {
+ delete obj(key);
+ return obj
+}
