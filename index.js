@@ -9,7 +9,7 @@ return object;
 }
 
 
-updateObjectWithKeyAndValue(key,value)  
+updateObjectWithKeyAndValue(object,prop,2)  ;
 
 
 
