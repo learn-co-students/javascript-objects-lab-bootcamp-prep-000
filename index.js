@@ -7,7 +7,7 @@ object[key]=value
 return object
 }
 
-return {'prop2':2}
+return prop2,2
 
 
  
