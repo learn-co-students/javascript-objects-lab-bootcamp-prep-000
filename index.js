@@ -1,9 +1,9 @@
 var recipes = {typeof:'object'}
-function updateObjectWithKeyAndValue(obj,key,value)
+function updateObjectWithKeyAndValue(object,key,value)
 {
-obj[key]='value'
-return obj
+object[key]='value'
+return object
 }
-var obj={'prop1':'1'}
+object[prop1]='1'
 updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
