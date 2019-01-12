@@ -1,14 +1,9 @@
 var recipes = {typeof:'object'};
 function updateObjectWithKeyAndValue(object,key,value)
 {
-  
+  {
 object[key]=value;
 
-return object;
-
+return object;}
+return (key,"2")
 }
-
-
-object[key]="1"
-{
- return object; }
