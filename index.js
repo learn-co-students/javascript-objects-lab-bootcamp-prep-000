@@ -9,12 +9,11 @@ return object;
 }
 
 
-function updateObjectWithKeyAndValue(object,key,value)  {
-object[key]=value;
-var obj = { prop: 1 }
+updateObjectWithKeyAndValue(key,value)  
 
-return key,value;
 
-}
+
+
+
 
  
