@@ -8,7 +8,7 @@ return object;
 
 }
 
-
+var object={prop1:1}
 updateObjectWithKeyAndValue(object,prop,2)  ;
 
 
