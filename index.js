@@ -9,7 +9,6 @@ return object;
 }
 
 
-updateObjectWithKeyAndValue(key,value);
-
+object[key]="1"
 
  
