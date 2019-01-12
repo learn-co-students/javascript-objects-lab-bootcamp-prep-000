@@ -9,7 +9,7 @@ return object
 }
 function updateObjectWithKeyAndValue(object,key,value)
 {
-return key
+return {key: value}
 }
 
 
