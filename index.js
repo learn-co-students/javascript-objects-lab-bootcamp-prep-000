@@ -1,11 +1,16 @@
-var recipes = {typeof:'object'};
-function updateObjectWithKeyAndValue(object,key,value)
-{
-  {
-object[key]=value;
+var recipes = {};
 
+function updateObjectWithKeyAndValue(object, key, value) {
+  return Object.assign({}, object, { [key]: value })
+}
 
-return object};
-return
-(object,prop2,2)
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+
+ object[key]=value;
+return object;
+}
+function deleteFromObjectByKey(object, key){
+ object[key]
+  newObject=object.delete[key]
+  return Object.assign({},newObject)
 }
