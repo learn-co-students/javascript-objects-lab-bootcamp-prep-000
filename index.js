@@ -10,5 +10,5 @@ return object;
 
 
 object[key]="1"
-
- 
+{
+ return object; }
