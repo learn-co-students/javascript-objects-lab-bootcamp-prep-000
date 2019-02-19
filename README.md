@@ -1,4 +1,4 @@
-# JavaScript Objects Lab
+th# JavaScript Objects Lab
 
 ## Overview
 
