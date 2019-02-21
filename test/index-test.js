@@ -13,6 +13,11 @@ describe('Objects', function() {
         prop: 1,
         prop2: 2
       })
+      var house = {person_one: 'Anna'};
+      expect(updateObjectWithKeyAndValue(house, 'person_two', 'Mehmet')).toMatch({
+        person_one: 'Anna',
+        person_two: 'Mehmet'
+      })
     })
 
     it('it does not modify the original object, but rather returns a clone with the new data', function() {
