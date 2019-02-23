@@ -2,6 +2,10 @@ let recipes = {
   Sandwich: ['Bread', 'Turkey', 'Mayo', 'Lettuce', 'Tomato']
 };
 
+function updateObjectWithKeyAndValue(object, key, value) {
+  return Object.assign({}, object, {[key]: value});
+}
+
 /*
 describe('Objects', function() {
   it('defines a `recipes` object', function() {
