@@ -3,25 +3,21 @@ var recipes = {
 }
 
 function updateObjectWithKeyAndValue(recipes, someKey, someValue) {
-  return Object.assign({}, recipes, {[someKey]: someValue})
+  return Object.assign({}, recipes, {[someKey]: someValue});
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(recipes, someKey, someValue) {
-  recipes[someKey] = someValue
-  return recipes
+  recipes[someKey] = someValue;
+  return recipes;
 }
 
 function deleteFromObjectByKey(recipes, someKey) {
-  var newRecipes = Object.assign({}, recipes)
-  delete newRecipes[someKey]
-  return newRecipes
+  let newObj = Object.assign({}, recipes, someKey);
+  delete newObj[someKey];
+  return newObj;
 }
 
 function destructivelyDeleteFromObjectByKey(recipes, someKey) {
-  delete recipes[someKey]
-  return recipes
+  delete recipes[someKey];
+  return recipes;
 }
-
-// function destructivelyDeleteFromObjectByKey () {
-//
-// }
