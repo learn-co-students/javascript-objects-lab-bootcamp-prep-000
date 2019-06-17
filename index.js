@@ -13,13 +13,20 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   return object
 }
 
-destructivelyUpdateObjectWithKeyAndValue(recipes, 'minestrone','verdure');
+destructivelyUpdateObjectWithKeyAndValue(recipes, "minestrone","verdure");
 
 function deleteFromObjectByKey(object, key){
+  var newObj = Object.assign({}, object)
+  delete newObj[key]
+  return newObj
+}
 
-  delete object.key
+deleteFromObjectByKey(recipes, "plumcake");
+
+function destructivelyDeleteFromObjectByKey(object, key) {
+
+  delete object[key]
   return object
 }
 
-deleteFromObjectByKey(recipes, "torta")
-deleteFromObjectByKey(recipes, "minestrone")
+destructivelyDeleteFromObjectByKey(recipes, "minestrone");
