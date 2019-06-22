@@ -1,7 +1,7 @@
 // Create new object called 'recipes'
 
 var recipes = {
-  key: 'flour'
+  ingredients: 'flour'
 }
 
 // Does not modify the original object, but rather returns a clone with the new data
