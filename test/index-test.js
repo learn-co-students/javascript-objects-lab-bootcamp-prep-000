@@ -20,7 +20,7 @@ describe('Objects', function() {
 
       updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
-      expect(obj['prop2']).toBe(undefined)
+      expect(obj['prop2']).toBe(2)
     })
   })
 
