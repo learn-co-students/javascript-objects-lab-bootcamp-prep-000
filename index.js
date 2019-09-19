@@ -1,3 +1,4 @@
+
 var recipes = new Object({})
 
 
@@ -20,3 +21,5 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key]
   return object
 }
+var recipes = new Object({keys: '0' })
+
