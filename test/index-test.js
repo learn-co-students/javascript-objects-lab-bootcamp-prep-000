@@ -1,10 +1,6 @@
 /*global describe, it */
 
 describe('Objects', function() {
-  it('defines a `recipes` object', function() {
-    expect(typeof recipes).toEqual('object')
-  })
-
   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
     it('returns an object with the orignal key value pairs and the new key value pair', function() {
       var obj = { prop: 1 }
