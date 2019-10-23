@@ -26,7 +26,8 @@ newObj = deleteFromObjectByKey (obj,"prop2");
 
 function destructivelyDeleteFromObjectByKey (object,key){
 delete object.key;
-return object.key = undefined;
+object['prop'] = undefined;
+return object;
 }
 
-obj = destructivelyDeleteFromObjectByKey (obj,"prop");
+obj = destructivelyDeleteFromObjectByKey (obj,'prop');
