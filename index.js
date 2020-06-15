@@ -6,7 +6,12 @@ function UpdateObjectWithKeyAndValue(Object, key, value){
 
 
 
-function deleteFromObjectByKey(obj, key)
+function deleteFromObjectByKey(obj, key){
+  var newObj = Object.assign({}, obj);
+  delete newObj.prop;
+  return newObj;
+  
+}
 
 
 
