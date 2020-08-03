@@ -1,7 +1,5 @@
 var updateObjectWithKeyAndValue = (object, key, value) => {
-  const updates = {}
-  updates[key] = value
-  return Object.assign({}, object, updates)
+  return Object.assign({}, object, {[key]: value})
 }
 
 var destructivelyUpdateObjectWithKeyAndValue = (object, key, value) => {
