@@ -18,9 +18,3 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key]
   return object;
 }
-
-object = {a: 1};
-
-console.log(updateObjectWithKeyAndValue(object, 'b', 2));
-
-console.log(object);
