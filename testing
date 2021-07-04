@@ -1,0 +1,10 @@
+function destructivelyUpdateObjectWithKeyAndValue(){
+  var obj = { prop: 1}
+  obj['prop2'] = '2'
+  return obj
+
+}
+
+
+var obj = {prop:1}
+console.log(obj)
