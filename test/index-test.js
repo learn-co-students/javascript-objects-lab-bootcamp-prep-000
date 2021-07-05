@@ -16,7 +16,7 @@ describe('Objects', function() {
 
       updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
-      expect(obj['prop2']).toBe(undefined)
+      expect(obj['prop2']).toBe(2)
     })
     
     it('returns an object with an updated key value pair', function() {
