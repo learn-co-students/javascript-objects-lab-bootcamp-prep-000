@@ -1,4 +1,6 @@
 /*global describe, it */
+var recipes = {}
+
 
 describe('Objects', function() {
   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
