@@ -1,4 +1,5 @@
-# JavaScript Objects Lab
+   \l;Lab
+     # JavaScript Objects Lab
 
 ## Overview
 
@@ -17,7 +18,7 @@ Good luck!
 
 **HINT**: You might find `deleteFromObjectByKey` to be a bit hard to write non-destructively. Think about how we learned to use `Object.assign`. What happens if we do
 
-``` javascript
+javascript
 var obj = { foo: 'bar' }
 
 var newObj = Object.assign({}, obj)
@@ -29,7 +30,7 @@ delete newObj.foo // true
 newObj // {}
 
 obj // { foo: 'bar' }
-```
+
 
 Hmmmmm...
 
