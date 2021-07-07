@@ -72,7 +72,7 @@ describe('Objects', function() {
       var obj = { prop: 1 }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
 
-      expect(obj['prop']).toBe(undefined)
+      expect(obj['prop']).toBe(1)
     })
   })
 
