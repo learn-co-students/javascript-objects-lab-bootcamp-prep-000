@@ -1,4 +1,4 @@
-# JavaScript Objects Lab
+ss, per the article I read and the error messages# JavaScript Objects Lab
 
 ## Overview
 
